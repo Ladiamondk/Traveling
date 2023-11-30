@@ -5,29 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trav-Matic</title>
     <link rel="stylesheet" href="/resources/styles/styles.css" >
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400&display=swap');
+    </style>
 </head>
+
 <body>
     <header>
         <img src="/resources/images/Collaboration.png" alt="Company logo">
         <nav>
             <ul>
-                <li style="border-right: 2px solid rgb(8, 159, 176) ;"><a href="#">Sign Up</a></li>
-                <li><a href="#">Sign In</a></li>
+                <li style="border-right: 2px solid rgb(8, 159, 176) ;" class="signUpBtn"><a href="#">Sign Up</a></li>
+                <li class="signInBtn"><a href="#">Sign In</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="form">
-            <h1>Hello there,</h1>
-            <h1>Welcome to Trav-Matic!</h1>
+        <div id="sign-in">
             <form action="">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Enter your username here" required>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Enter your password here" required>
-                <a href="#">Forgot password?</a>
-                <button type="submit">Login</button>
+                <h1>Hello there,</h1>
+                <h2>Welcome to Trav-Matic!</h2>
+                <div class="input-group">
+                    <input type="text" name="username" id="username" required> 
+                    <label for="username">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" name="remember-me" id="remember-me">
+                    <label for="remember-me">Remember me</label> 
+                </div>
+                <div >
+                    <button type="submit">Login</button>
+                </div>
             </form>
+        </div>
+        <div>
+            <div id="sign-up">
+                <form action="">
+                    <h1>Welcome to Trav-Matic!</h1>
+                    <h2>Planning made easy</h2>
+                    <div class="input-group">
+                        <input type="text" name="username" id="username" required> 
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" id="email" required> 
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox" name="consent" id="consent" required>
+                        <label for="consent">I agreed to the terms & conditions</label> 
+                    </div>
+                    <div>
+                       <button type="submit">Sign up</button> 
+                    </div>
+                    
+                </form>
+            </div>  
         </div>
     </main> 
 </body>
