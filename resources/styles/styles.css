@@ -5,7 +5,10 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
-   background-color: black;
+    background-image: url(/resources/images/background-4.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-color: black;
 }
 header{
     display: flex;
@@ -127,4 +130,8 @@ button{
     border-radius: 15px;
     border: none;
     outline: none;
+}
+footer{
+    margin-top: 550px;
+    color: #ffff;
 }
