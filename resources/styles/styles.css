@@ -34,7 +34,14 @@ main{
     justify-content: center;
     align-items: center;
     background-color: #0000;
-    
+}
+main:hover{
+    animation: animate 1s linear infinite;
+}
+@keyframes animate{
+    100%{
+        filter: hue-rotate(360deg);
+    }
 }
 form{
     background-color: #0000;
@@ -49,6 +56,16 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    margin-bottom: 25px;
+}
+#sign-in{
+ position: absolute;
+ transform: translateY(252px);
+}
+#sign-up{
+position: absolute;
+transform: translateX(-178px); 
+visibility: hidden;
 }
 h2, h1 {
     font-size: 22px;
