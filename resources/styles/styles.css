@@ -9,7 +9,8 @@ body{
     background-repeat: none;
     background-size: cover;
     background-color: black;
-    
+    min-width: 90%;
+    height: auto;
 }
 header{
     display: flex;
@@ -67,6 +68,7 @@ form{
     justify-content: center;
     align-items: left;
     margin-bottom: 25px;
+    z-index: 111;
 }
 #sign-in{
  position: absolute;
@@ -75,7 +77,6 @@ form{
 #sign-up{
 position: absolute;
 transform: translateX(-178px); 
-visibility: hidden;
 }
 h2, h1 {
     font-size: 22px;

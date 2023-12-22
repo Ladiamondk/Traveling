@@ -11,11 +11,16 @@ const password =  passwordInput.value;
 const consentInput = document.getElementById('consent');
 const consent =  consentInput.value;
 
+signUpForm.style.opacity = '0';
+signUpForm.style.transition = 'opacity 0.5s ease-in-out';
+signInForm.style.transition = 'opacity 0.5s ease-in-out';
+
 signUpBtn.addEventListener('click', () => {
-    signUpForm.style.visibility = 'visible';
-    signInForm.style.visibility = 'hidden';
+    signUpForm.style.opacity = '1'; // Make the form visible
+    signInForm.style.opacity = '0'; // Hide the other form
 });
+
 signInBtn.addEventListener('click', () => {
-    signInForm.style.visibility = 'visible';
-    signUpForm.style.visibility = 'hidden';
+    signInForm.style.opacity = '1'; // Make the form visible
+    signUpForm.style.opacity = '0'; // Hide the other form
 });
